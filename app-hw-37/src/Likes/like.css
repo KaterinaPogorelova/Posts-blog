@@ -1,0 +1,14 @@
+.btn-like {
+	background: none;
+	border: none;
+	width: 30px;
+	height: 30px;
+}
+
+.btn-like:hover {
+	cursor: pointer;
+}
+
+.btn-like svg:hover {
+	fill: blue;
+}

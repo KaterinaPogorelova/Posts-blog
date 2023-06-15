@@ -1,0 +1,81 @@
+.header {
+	position: absolute;
+	width: 300px;
+	height: 500px;
+	background: white;
+	visibility: hidden;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.header--active {
+	visibility: visible;
+}
+
+.header__nav {
+	width: 100%;
+	padding: 0px 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav__nav-link {
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	padding: 20px 0px;
+	border-bottom: 1px solid rgb(204, 201, 201);
+	text-align: center;
+}
+
+.nav__nav-item {
+	color: rgb(75, 73, 73);
+}
+
+.nav__nav-item:hover {
+	color: rgb(43, 43, 194);
+}
+
+.other-compon-wrapper {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+}
+
+.themes-btn-wrapper {
+	display: flex;
+	height: 70px;
+}
+
+.themes-btn {
+	display: block;
+	width: 50%;
+	background-color: white;
+	border: 1px solid rgb(204, 201, 201);
+}
+
+.themes-btn:hover {
+	cursor: pointer;
+}
+
+.themes-btn svg {
+	height: 50%;
+}
+
+.auth-btn {
+	display: block;
+	padding: 25px 0px;
+	width: 100%;
+	text-align: center;
+	background-color: rgb(204, 201, 201);
+	font-weight: 600;
+	color: rgb(75, 73, 73);
+}
+
+.auth-btn:hover {
+	color: rgb(43, 43, 194);
+}

@@ -1,0 +1,14 @@
+.header__selected-user {
+	padding: 15px;
+	background: rgb(48, 48, 219);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	color: white;
+}
+
+.selected-user__icon {
+	background-color: rgb(94, 94, 211);
+	padding: 10px;
+}

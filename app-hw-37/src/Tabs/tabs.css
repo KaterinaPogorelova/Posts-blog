@@ -1,0 +1,39 @@
+.tabs {
+	width: 100%;
+	border-bottom: 1px solid gray;
+	list-style-type: none;
+	display: flex;
+	gap: 100px;
+	margin-bottom: 30px;
+}
+
+.tabs__tab {
+	height: 90px;
+	width: 120px;
+}
+
+.tabs__tab--active {
+	border-bottom: 2px solid blue;
+}
+
+.tab__btn {
+	width: 100%;
+	height: 100%;
+	background: none;
+	border: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 600;
+	font-size: 18px;
+	text-align: center;
+	color: rgb(75, 73, 73);
+}
+
+.tab__btn:hover {
+	cursor: pointer;
+	color: rgb(12, 12, 167);
+}
+
+.tab__btn:disabled {
+	cursor: auto;
+	color: rgb(75, 73, 73);
+}

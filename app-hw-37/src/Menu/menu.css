@@ -1,0 +1,75 @@
+.menu__wrapper {
+	position: relative;
+}
+
+.menu {
+	height: 80px;
+	width: 100%;
+	background: rgb(48, 48, 219);
+	display: flex;
+}
+
+.menu__btn {
+	height: 100%;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: rgb(48, 48, 219);
+	border: none;
+	cursor: pointer;
+}
+
+.menu__btn svg {
+	width: 33%;
+	height: 33%;
+	fill: white;
+}
+
+#menu__toggle {
+	opacity: 0;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+	z-index: 5;
+	width: 24px;
+	height: 18px;
+	cursor: pointer;
+}
+
+.menu__search-input {
+	background-color: rgb(94, 94, 211);
+	flex-grow: 1;
+	color: white;
+	border: none;
+	padding: 30px;
+}
+
+.menu__search-input::placeholder {
+	color: white;
+}
+
+.theme__btn {
+	height: 100%;
+	width: 80px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	background: rgb(94, 94, 211);
+	border: none;
+	color: white;
+}
+
+.theme__btn:hover {
+	cursor: pointer;
+}
+
+.menu__user-info {
+	height: 100%;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
