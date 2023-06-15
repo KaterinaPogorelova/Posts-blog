@@ -1,6 +1,6 @@
 import './pagination.css'
 import { useAppDispatch, useAppSelector } from '../Store/store';
-import { getMyPostsThunk, getNextPageThunk, getPostsThunk, setLimit, getPrevPageThunk } from '../Store/post';
+import { getNextPageThunk, getPrevPageThunk } from '../Store/post';
 
 export const Pagination = () => {
 	const theme = useAppSelector((state) => state.theme.themeColor)

@@ -1,6 +1,6 @@
 import { useState } from "react"
 import './onload.css'
-import { sendPost, PostNext } from "../getPosts"
+import { sendPost } from "../getPosts"
 import { useFileSelect } from "../customHooks"
 
 export const Onload = () => {
