@@ -4,7 +4,7 @@ import { Title } from '../Title/Title';
 import { Card } from './Card';
 import './card.css';
 import { useAppDispatch, useAppSelector } from '../Store/store';
-import { getMyPostsThunk, getNextPageThunk, getPostsThunk, setLimit, setOrdering } from '../Store/post';
+import { getPostsThunk, setLimit, setOrdering } from '../Store/post';
 import { Tabs } from '../Tabs/Tabs';
 import { Post } from '../getPosts';
 import { Pagination } from '../Pagination/Pagination';

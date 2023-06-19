@@ -23,7 +23,7 @@ export const postsSlice = createSlice({
 			if (!likedPost) return
 			likedPost.likes = likedPost.likes ? likedPost.likes + 1 : 1
 			const likedPosts = state.posts.filter((post) => post.likes)
-			{/* @ts-ignore */ }
+			/* @ts-ignore */
 			const sortedPosts = likedPosts.sort((post1, post2) => post2.likes - post1.likes)
 			state.popularPosts = sortedPosts
 		},

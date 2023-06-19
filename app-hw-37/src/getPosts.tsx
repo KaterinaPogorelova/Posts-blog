@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react';
 import { refreshJWT } from './handleAuth';
 const POSTSURL = "https://studapi.teachmeskills.by/blog/posts/"
 const MYPOSTSURL = "https://studapi.teachmeskills.by/blog/posts/my_posts/"

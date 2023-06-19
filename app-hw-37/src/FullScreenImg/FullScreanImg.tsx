@@ -25,7 +25,7 @@ export const FullScreenImg = ({ id }: Props) => {
 		<div className="fullScreen-wrapper">
 			<Link to='/posts'><div className='close'></div></Link>
 			<div className='fullScreen__img-wrapper'>
-				{post.image ? <img src={img} alt='post image' /> : <p>Image isn't found</p>}
+				{post.image ? <img src={img} alt={'post ' + post.id + ' img'} /> : <p>Image isn't found</p>}
 			</div>
 			<div className='fullScreen__btn fullScreen__next-btn' onClick={() => dispatch(listImages('next'))}></div>
 			<div className='fullScreen__btn fullScreen__prev-btn' onClick={() => dispatch(listImages('prev'))}></div>

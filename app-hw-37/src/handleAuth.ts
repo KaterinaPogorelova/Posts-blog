@@ -1,4 +1,3 @@
-import React, { ReactNode } from 'react';
 const AUTHURL = "https://studapi.teachmeskills.by/auth/users/"
 const ACTIVATEURL = 'https://studapi.teachmeskills.by/auth/users/activation/'
 const JWTCREATEURL = 'https://studapi.teachmeskills.by/auth/jwt/create/'

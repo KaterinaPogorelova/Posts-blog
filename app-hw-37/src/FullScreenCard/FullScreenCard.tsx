@@ -16,6 +16,7 @@ export const FullScreenCard = () => {
 		if (post) {
 			return postCard.id === post.id
 		}
+		return
 	}))
 	dispatch(setPostsIds(post ? post.id : 0))
 	const nextId = useAppSelector((state) => state.posts.nextId)

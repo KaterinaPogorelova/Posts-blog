@@ -5,17 +5,6 @@ import { FullScreenCard } from '../FullScreenCard/FullScreenCard';
 import { FullScreenImg } from '../FullScreenImg/FullScreanImg';
 import { Routes, Route } from 'react-router-dom';
 
-type Post = {
-	id: number,
-	image?: string,
-	text: string,
-	date: string,
-	lesson_num: number,
-	title: string,
-	description: string,
-	author: number
-}
-
 export const Main = () => {
 	const [fullScreenPostId, setFullScreenPostId] = useState(0)
 
