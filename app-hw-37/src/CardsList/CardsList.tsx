@@ -28,6 +28,7 @@ export const CardsList = ({ showFullScreenCard, isFavourites, isPopular }: Props
 	const theme = useAppSelector((state) => state.theme.themeColor)
 	const popularPosts = useAppSelector((state) => state.posts.popularPosts)
 	const isLoading = useAppSelector((state) => state.posts.isLoading)
+	const isAuthorised=useAppSelector((state)=>state.auth.isAuthorised)
 
 	if (isFavourites) {
 		return (<>
@@ -52,7 +53,7 @@ export const CardsList = ({ showFullScreenCard, isFavourites, isPopular }: Props
 		<Title>{searchInputValue === '' ? 'Blog' : 'Search results "' + searchInputValue + '"'}</Title>
 		<Tabs tabs={[{ tabName: 'All', tabLink: '/posts' }, { tabName: 'My favourites', tabLink: '/favourites' }, { tabName: 'Popular', tabLink: '/popular' }]}></Tabs>
 		{isLoading && <h3 style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>Loading...</h3>}
-		<Link to='/onload' className='post__addPost'>Add Post +</Link>
+		{isAuthorised&&<Link to='/onload' className='post__addPost'>Add Post +</Link>}
 		<div className='posts__sorting-wrapper'>
 			<label className='posts__sorting-label' htmlFor="limit-select" style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>Choose posts limit:</label>
 			<select name="limit" id="limit-select" className='posts__sorting-select' style={theme === 'light' ? { background: 'white', color: 'rgb(75, 73, 73)' } : { background: '#423e3e', color: 'white' }} onChange={(e) => dispatch(setLimit(Number(e.target.value)))}>

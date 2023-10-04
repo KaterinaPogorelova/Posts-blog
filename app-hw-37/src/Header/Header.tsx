@@ -22,7 +22,7 @@ export const Header = ({ menuState }: Props) => {
 			{isAuthorised && <SelectedUser></SelectedUser>}
 			<ul className='header__nav'>
 				<Link to='/' className='nav__nav-link'><li className='nav__nav-item' style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>Home</li></Link>
-				{isAuthorised && <Link to='posts' className='nav__nav-link'><li className='nav__nav-item' style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>Posts</li></Link>}
+				<Link to='posts' className='nav__nav-link'><li className='nav__nav-item' style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>Posts</li></Link>
 				{isAuthorised && <Link to='posts/my_posts' className='nav__nav-link'><li className='nav__nav-item' style={theme === 'light' ? { color: 'rgb(75, 73, 73)' } : { color: 'white' }}>My Posts</li></Link>}
 			</ul>
 			<div className='other-compon-wrapper'>
